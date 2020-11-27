@@ -1,4 +1,4 @@
-name: Team awesome's approval workflow
+name: Team awesome approval workflow
 on: pull_request_review
 jobs:
   labelWhenApproved:
@@ -9,4 +9,4 @@ jobs:
       env:
         APPROVALS: "2"
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        ADD_LABEL: "approved"
+        ADD_LABEL: "approved" 
