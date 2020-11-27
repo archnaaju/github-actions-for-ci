@@ -22,7 +22,11 @@ jobs:
         with:
           name: webpack artifacts
           path: public/
-
+    - uses: actions/download-artifact@master
+      with:
+        name: webpack artifacts
+        path: public
+    - name: npm install, and test
  test:
     needs: build
     runs-on: ubuntu-latest
